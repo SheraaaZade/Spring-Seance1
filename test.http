@@ -1,0 +1,21 @@
+### Create one
+PUT http://localhost:8080/products/404
+Content-Type: application/json
+
+{
+  "id": 404,
+  "name": "brain not found",
+  "category": "error",
+  "price" : 250
+}
+
+### Delete one
+DELETE http://localhost:8080/products/404
+Content-Type: application/json
+
+{
+  "id": 404
+}
+
+### Delete all
+DELETE http://localhost:8080/products
